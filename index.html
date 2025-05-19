@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nadie Te Quiere Como Yo</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            line-height: 1.6;
+            background: linear-gradient(135deg, #f5e9e9 0%, #e8d6d6 100%);
+        }
+        
+        .poema-container {
+            max-width: 600px;
+            text-align: center;
+            padding: 2.5rem;
+            background-color: rgba(255, 255, 255, 0.9);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+            border-radius: 12px;
+            border-left: 5px solid #d4a5a5;
+            position: relative;
+            margin: 20px;
+        }
+        
+        h1 {
+            color: #8a4a4a;
+            margin-bottom: 2rem;
+            font-style: italic;
+            font-weight: normal;
+            font-size: 2.2rem;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+        }
+        
+        .poema {
+            white-space: pre-line;
+            font-size: 1.15rem;
+            color: #555;
+        }
+        
+        .autor {
+            margin-top: 2.5rem;
+            font-style: italic;
+            color: #8a4a4a;
+            font-weight: bold;
+        }
+        
+        .estrofa {
+            margin-bottom: 1.8rem;
+            transition: all 0.3s ease;
+        }
+        
+        .estrofa:hover {
+            transform: translateX(5px);
+            color: #333;
+        }
+        
+        .music-player {
+            margin-top: 2rem;
+            width: 100%;
+        }
+        
+        audio {
+            width: 100%;
+            border-radius: 50px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        
+        audio::-webkit-media-controls-panel {
+            background-color: #f8f8f8;
+        }
+        
+        .corazon {
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            font-size: 1.5rem;
+            color: #d4a5a5;
+            animation: latido 1.5s infinite;
+        }
+        
+        @keyframes latido {
+            0% { transform: scale(1); }
+            25% { transform: scale(1.1); }
+            50% { transform: scale(1); }
+            75% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+    </style>
+</head>
+<body>
+    <div class="poema-container">
+        <div class="corazon">❤</div>
+        <h1>Nadie Te Quiere Como Yo</h1>
+        <div class="poema">
+            <div class="estrofa">
+                A veces me quedo en silencio,
+                mirando el techo sin razón,
+                pensando en cómo decirte
+                todo lo que me guardo en el corazón.
+            </div>
+            
+            <div class="estrofa">
+                No soy bueno con las palabras,
+                se me enredan cuando hablo de ti,
+                pero juro que si pudieras sentirme,
+                sabrías que nadie te quiere así.
+            </div>
+            
+            <div class="estrofa">
+                He visto cómo te miran otros,
+                con sonrisas y frases bonitas,
+                pero nadie ve lo que yo veo
+                cuando te vas, cuando respiras.
+            </div>
+            
+            <div class="estrofa">
+                Tú no eres solo un momento,
+                eres todos mis días y más,
+                la calma cuando todo duele,
+                la voz que siempre quiero escuchar.
+            </div>
+            
+            <div class="estrofa">
+                No te escribo con metáforas raras,
+                ni pretendo sonar perfecto,
+                yo solo amo como sé amar,
+                con errores, con miedo, directo.
+            </div>
+            
+            <div class="estrofa">
+                Y si un día dudas de mi cariño,
+                mírame a los ojos sin hablar,
+                ahí guardo todo lo que no digo,
+                todo eso que no supe explicar.
+            </div>
+            
+            <div class="estrofa">
+                Tú mereces canciones y cielos,
+                risas, abrazos, libertad,
+                pero si me das un lugar en tu historia,
+                te prometo verdad, no mitad.
+            </div>
+            
+            <div class="estrofa">
+                No sé si esto dure para siempre,
+                nadie puede prometer el tiempo,
+                pero mientras respire y te piense,
+                serás tú, en cada pensamiento.
+            </div>
+            
+            <div class="estrofa">
+                Y si alguien llega a tu vida,
+                y te dice que puede cuidarte mejor,
+                déjale hablar, deja que sueñe,
+                pero recuerda cómo te quiero yo.
+            </div>
+        </div>
+        <div class="autor">- Piero Canaza</div>
+        
+        <!-- Reproductor de audio MP3 -->
+        <div class="music-player">
+            <audio controls>
+                <source src="musica.mp3" type="audio/mpeg">
+                Tu navegador no soporta el elemento de audio.
+            </audio>
+            <p style="font-size: 0.8rem; color: #777; margin-top: 5px;">
+                * Te quiero mucho, Mi alexa ♥ "
+            </p>
+        </div>
+    </div>
+</body>
+</html>
